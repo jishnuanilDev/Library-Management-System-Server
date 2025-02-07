@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "https://libraryhub-psi.vercel.app", 
+  origin: "*", 
   methods: ["GET", "POST", "PUT", "DELETE"], 
   allowedHeaders: ["Content-Type", "Authorization"] 
 }));
